@@ -25,7 +25,7 @@ https://zoomadmin.com/HowToLinux/LinuxCommand/ssh-keygen
 
 ssh-keygen -t rsa -b 4096 -f my-own-rsa-key
 
-ssh-keygen -t rsa -b 4096 -f my-own-rsa-key -C collinxsmith@gmail.com
+ssh-keygen -t rsa -b 4096 -f my-own-rsa-key -C example@gmail.com
 
 
 #### Add key to host server
