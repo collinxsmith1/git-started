@@ -1,6 +1,7 @@
 # How to get going with git
 
 
+https://devdojo.com/guide/git/ssh-keys
 
 ## Setup ssh keys for github access
 
@@ -46,6 +47,9 @@ ssh-add ~/.ssh/where_ever_privake_key_is
 
 --------------------------------------------
 
+
+## git init the project codebase
+
 https://medium.com/@ganeshpotnuru414_40411/setting-a-new-git-repo-to-existing-code-folder-a43e8bb7d914
 
 https://gist.github.com/hatamiarash7/c5a975f9b03edc71da878b835ec5e4dd
@@ -60,13 +64,12 @@ git add .
 
 git commit -m "Commit Message"
 
+git branch -M main
+
 git remote add origin git@github.com:collinxsmith1/Project-x-Name.git
 
-git config --global push.default simple
+git push -u origin main
 
-git branch --set-upstream-to=master
-
-git push
 
 ### Starting with existing code repo
 
