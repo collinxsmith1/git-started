@@ -48,23 +48,25 @@ ssh-add ~/.ssh/where_ever_privake_key_is
 
 https://medium.com/@ganeshpotnuru414_40411/setting-a-new-git-repo-to-existing-code-folder-a43e8bb7d914
 
+https://gist.github.com/hatamiarash7/c5a975f9b03edc71da878b835ec5e4dd
+
 ### With an existing project / code base not yet in remote git repo
 
 cd project-folder
 
 git init
 
-git remote add origin git@github.com:collinxsmith1/Project-x-Name.git
-
 git add .
 
 git commit -m "Commit Message"
 
-git push --set-upstream origin master
+git remote add origin git@github.com:collinxsmith1/Project-x-Name.git
 
-git pull — rebase origin master
+git config --global push.default simple
 
-git push origin master
+git branch --set-upstream-to=master
+
+git push
 
 ### Starting with existing code repo
 
