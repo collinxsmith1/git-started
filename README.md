@@ -47,6 +47,27 @@ ssh-add ~/.ssh/where_ever_privake_key_is
 
 --------------------------------------------
 
+## .ssh directory permissions
+
+~/ home directory : 755 (drwxr-xr-x)
+
+~/.ssh/ directory : 700 (drwx------)
+
+~/.ssh/authorized_keys : 640 (-rw-r-----)
+
+~/.ssh/config : 640 (-rw-r-----)
+
+~/.ssh/*.pub public keys : 644 (-rw-r--r--)
+
+~/.ssh/id_rsa private keys : 600 (-rw-------)
+
+~/.ssh/known_hosts : 600 (-rw-------)
+
+your home directory should not be writeable by the group or others (at most 755 (drwxr-xr-x)).
+
+The only important things are that nothing in .ssh is writeable to anyone else and none of the secret keys are readable to anyone else
+
+--------------------------------------------
 
 ## git init the project codebase
 
